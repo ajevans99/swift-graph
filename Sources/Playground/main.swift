@@ -1,4 +1,4 @@
-import SPMTemplate
+import Graph
 
-let greeter = SPMTemplate()
+let greeter = Graph()
 print(greeter.greet(name: "Playground"))

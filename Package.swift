@@ -2,36 +2,36 @@
 import PackageDescription
 
 let package = Package(
-    name: "spm-template",
-    defaultLocalization: "en",
-    platforms: [
-        .iOS(.v17),
-        .macOS(.v13),
-        .tvOS(.v17),
-        .watchOS(.v10)
-    ],
-    products: [
-        .library(
-            name: "SPMTemplate",
-            targets: ["SPMTemplate"]
-        ),
-        .executable(
-            name: "Playground",
-            targets: ["Playground"]
-        ),
-    ],
-    dependencies: [],
-    targets: [
-        .target(
-            name: "SPMTemplate"
-        ),
-        .executableTarget(
-            name: "Playground",
-            dependencies: ["SPMTemplate"]
-        ),
-        .testTarget(
-            name: "SPMTemplateTests",
-            dependencies: ["SPMTemplate"]
-        ),
-    ]
+  name: "swift-graph",
+  defaultLocalization: "en",
+  platforms: [
+    .iOS(.v17),
+    .macOS(.v13),
+    .tvOS(.v17),
+    .watchOS(.v10),
+  ],
+  products: [
+    .library(
+      name: "Graph",
+      targets: ["Graph"]
+    ),
+    .executable(
+      name: "Playground",
+      targets: ["Playground"]
+    ),
+  ],
+  dependencies: [],
+  targets: [
+    .target(
+      name: "Graph"
+    ),
+    .executableTarget(
+      name: "Playground",
+      dependencies: ["Graph"]
+    ),
+    .testTarget(
+      name: "GraphTests",
+      dependencies: ["Graph"]
+    ),
+  ]
 )

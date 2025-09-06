@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:spm-template}",
+      "name": "Release Playground",
+      "program": "${workspaceFolder:spm-template}/.build/release/Playground",
+      "preLaunchTask": "swift: Build Release Playground"
+    }
+  ]
+}
